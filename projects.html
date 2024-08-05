@@ -4,43 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+            <ul class="navbar">
+                <li><a class="navlink" href="./index.html">Home</a></li>
+                <li><a class="navlink" href="./about.html">About</a></li>
+                <li><a class="navlink" href="./projects.html"><span class="local_link">Projects</span></a></li>
+                <li><a class="navlink" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h1>My Projects</h1>
-            <p>Aqui você encontrará uma seleção dos projetos mais recentes e significativos em que tenho trabalhado. Cada projeto representa um desafio único, uma oportunidade de crescimento e aprendizado, e o resultado do meu trabalho e dedicação.</p>
+            <h1 class="title">My <span class="text_decoration"> Projects </span></h1>
+            <p class="text">Aqui você encontrará uma seleção dos projetos mais recentes e significativos em que tenho trabalhado. Cada projeto representa um desafio único, uma oportunidade de crescimento e aprendizado, e o resultado do meu trabalho e dedicação.</p>
 
-            <div>
-                <img src="/" alt="/"> <!--Irei inserir a imagem na próxima etapa-->
-                <p>Project: Dev Links</p>
-                <p>Languages: HTML, CSS, JavaScript</p>
-                <p>O projeto se trata de um agregador de links que funciona como um cartão de visita online para desenvolvedores, permitindo compartilhar informações importantes e úteis sobre você e seus projetos.</p>
-                <p>Preview: <a href="https://kimberllyatanazio.github.io/projeto-discover/">https://kimberllyatanazio.github.io/projeto-discover/</a></p> 
-            </div>
-            <div>
-                <img src="/" alt="/"> <!--Irei inserir a imagem na próxima etapa-->
-                <p>Project: GTA Page (clone)</p>
-                <p>Languages: HTML, CSS, JavaScript</p>
-                <p>Este projeto foi parte da iniciativa “Semana do Zero ao Programador Contratado promovida pelo canal Dev em Dobro. Durante essa semana de aprendizado, criamos uma landpage simples do GTA V. </p>
-                <p>Preview: <a href="https://kimberllyatanazio.github.io/projeto-gta/">https://kimberllyatanazio.github.io/projeto-gta/</a></p> 
-            </div>
-            <div>
-                <img src="/" alt="/"> <!--Irei inserir a imagem na próxima etapa-->
-                <p>Project: Lorem ipsum</p>
-                <p>Languages: HTML, CSS, JavaScript</p>
-                <p>Lorem ipsum dolor sit amet consectetur. Faucibus semper hendrerit velit et. Quisque arcu maecenas varius pretium sit rhoncus porta aliquet orci. Laoreet consectetur id faucibus nec iaculis posuere sem vitae. Orci mauris ac sed consequat. </p>
-                <p>Preview: <a href="">linkaqui</a></p> 
+            <div class="container_box">
+                <div class="column0">
+                    <div>
+                        <img class="img_proj" src="./assets/projeto dev links.png" alt="Projeto Dev Links"> 
+                    </div>
+                    <div class="info_project">
+                        <p>Project: Dev Links <br>
+                        Languages: HTML, CSS, JavaScript</p>
+                        <p>O projeto se trata de um agregador de links que funciona como um cartão de visita online para desenvolvedores, permitindo compartilhar informações importantes e úteis sobre você e seus projetos.</p>
+                        <p>Preview: <a class="link_decor" href="https://kimberllyatanazio.github.io/projeto-discover/" target="_blank"><span class="text_decoration">https://kimberllyatanazio.github.io/projeto-discover/</span></a></p> 
+                    </div>
+                </div>
+                <div class="column1">
+                    <div>
+                        <img class="img_proj" src="./assets/projeto gta.png" alt="Projeto GTA">
+                    </div>
+                    <div class="info_project">
+                        <p>Project: GTA Page (clone) <br>
+                        Languages: HTML, CSS, JavaScript</p>
+                        <p>Este projeto foi parte da iniciativa “Semana do Zero ao Programador Contratado promovida pelo canal Dev em Dobro. Durante essa semana de aprendizado, criamos uma landpage simples do GTA V. </p>
+                        <p>Preview: <a class="link_decor" href="https://kimberllyatanazio.github.io/projeto-gta/" target="_blank"><span class="text_decoration">https://kimberllyatanazio.github.io/projeto-gta/</span></a></p>
+                    </div> 
+                </div>
+                <div class="column0">
+                    <div>
+                        <img class="img_proj" src="./assets/projeto jogo.png" alt="Jogo Número Secreto"> 
+                    </div>
+                    <div class="info_project">
+                        <p>Project: Jogo do Número Secreto <br>
+                        Languages: JavaScript</p>
+                        <p>Projeto realizado no decorrer das aulas sobre Lógica de Programação na plataforma ALURA.</p>
+                        <p>Preview: <a class="link_decor" href="https://jogo-numero-secreto-phi-one.vercel.app/" target="_blank"><span class="text_decoration">https://jogo-numero-secreto-phi-one.vercel.app/</span></a></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

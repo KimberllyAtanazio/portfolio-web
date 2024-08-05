@@ -4,47 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="home">
     <header>
         <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+            <ul class="navbar">
+                <li><a class="navlink" href="./index.html">Home</a></li>
+                <li><a class="navlink" href="./about.html">About</a></li>
+                <li><a class="navlink" href="./projects.html">Projects</a></li>
+                <li><a class="navlink" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <img src="./assets/avatar.jpg" alt="Foto de Kimberlly">
+        <img class="avatar" src="./assets/avatar.jpg" alt="Foto de Kimberlly">
         
-        <section>
-            <h1>Kimberlly Atanazio</h1> 
-            <h4>Full Stack Developer Junior</h4>
-            <p>Sou formada em Comunicação e atualmente estou embarcando em uma transição de carreira para a programação. Estou determinada a adquirir habilidades em desenvolvimento web para criar experiências digitais envolventes e acessíveis, enfrentar desafios inovadores e contribuir para projetos impactantes.</p>
+        <div class="box_home">
+            <h1 class="title_home">Kimberlly Atanazio</h1> 
+            <h4 class="subtitle_home">Full Stack Developer Junior</h4>
+            <p class="text">Sou formada em Comunicação e atualmente estou embarcando em uma transição de carreira para a programação. Estou determinada a adquirir habilidades em desenvolvimento web para criar experiências digitais envolventes e acessíveis, enfrentar desafios inovadores e contribuir para projetos impactantes.</p>
 
-            <a href="https://www.instagram.com/kim_atanazio/" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
+            <div class="box_links">
+                <a class="social_links" href="https://www.instagram.com/kim_atanazio/" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
 
-            <a href="https://github.com/KimberllyAtanazio" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
+                <a class="social_links" href="https://github.com/KimberllyAtanazio" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
 
-            <a href="https://www.linkedin.com/in/kimberllyatanazio/" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
+                <a class="social_links" href="https://www.linkedin.com/in/kimberllyatanazio/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
 
-            <a href="mailto:kimberlly.atanazio@gmail.com" target="_blank">
-                <ion-icon name="logo-google"></ion-icon>
-            </a>
+                <a class="social_links" href="mailto:kimberlly.atanazio@gmail.com" target="_blank">
+                    <ion-icon name="logo-google"></ion-icon>
+                </a>
 
-            <a href="https://api.whatsapp.com/send/?phone=351933979168&text&type=phone_number&app_absent=0" target="_blank">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-         </section>
+                <a class="social_links" href="https://api.whatsapp.com/send/?phone=351933979168&text&type=phone_number&app_absent=0" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </div>
+        </div>
 
     </main>
     

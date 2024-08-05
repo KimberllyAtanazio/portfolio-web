@@ -4,165 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head> 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+            <ul class="navbar">
+                <li><a class="navlink" href="./index.html">Home</a></li>
+                <li><a class="navlink" href="./about.html"><span class="local_link">About</span></a></li>
+                <li><a class="navlink" href="./projects.html">Projects</a></li>
+                <li><a class="navlink" href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-             <h1>About me</h1>
-             <p><span>Hello! I'm Kimberlly. </span> Tenho 26 anos, sou formada na área de comunicação com graduação em Audiovisual e Cinema. Através da comunicação, sou capaz de compartilhar histórias poderosas, promover mudanças positivas e construir conexões genuínas. Recentemente, decidi migrar para programação e acredito que nessa área também seja possível contar histórias, mas através de códigos. Com uma mentalidade orientada para soluções e um desejo incessante de aprendizado, estou imersa em adquirir novas habilidades, enquanto busco oportunidades para aplicar minha criatividade e minha capacidade analítica em projetos desafiadores.</p>
+             <h1 class="title">About <span class="text_decoration"> me</span></h1>
+             <p class="text"><span class="text_decoration_bold">Hello, world! I'm Kimberlly. </span> Tenho 26 anos, sou formada na área de comunicação com graduação em Audiovisual e Cinema. Através da comunicação, sou capaz de compartilhar histórias poderosas, promover mudanças positivas e construir conexões genuínas. Recentemente, decidi migrar para programação e acredito que nessa área também seja possível contar histórias, mas através de códigos. Com uma mentalidade orientada para soluções e um desejo incessante de aprendizado, estou imersa em adquirir novas habilidades, enquanto busco oportunidades para aplicar minha criatividade e minha capacidade analítica em projetos desafiadores.</p>
 
-             <h2>Personal Details</h2>
-             <div>
-                Nome: <br>
-                Idade: <br>
-                Nacionalidade: <br>
-                Local: <br>
-                Telefone: <br>
-                Email: <br>
-                Idiomas: <br>
-             </div>
-             <div>
-                Kimberlly Atanazio <br>
-                26 anos <br>
-                Brasileira <br>
-                Lisboa, Portugal <br>
-                +351 933 979 168 <br>
-                kimberlly.atanazio@gmail.com <br>
-                Português (nativo) | Inglês (Pré intermediário) <br>
-             </div>
+             <div class="container_infos">
 
-             <h2>My Interests</h2>
+                <div class="left_column">
+                    <h2 class="subtitle" id="title_personal">Personal Details</h2>
+                    <div class="personal_details">
+                        <div class="text_decoration">
+                            Nome: <br>
+                            Idade: <br>
+                            Nacionalidade: <br>
+                            Local: <br>
+                            Telefone: <br>
+                            Email: <br>
+                            Idiomas: <br>
+                        </div>
+                        <div class="text_column">
+                            Kimberlly Atanazio <br>
+                            26 anos <br>
+                            Brasileira <br>
+                            Lisboa, Portugal <br>
+                            +351 933 979 168 <br>
+                            kimberlly.atanazio@gmail.com <br>
+                            Português (nativo) | Inglês (Pré intermediário) <br>
+                        </div>
+                    </div>
+                </div>
 
-             <div>
-                <ion-icon name="film-outline"></ion-icon>
-                <ion-icon name="airplane-outline"></ion-icon>
-                <ion-icon name="paw-outline"></ion-icon>
-                <ion-icon name="extension-puzzle-outline"></ion-icon>
+                <div class="right_column">
+                    <h2 class="subtitle" id="title_box">My Interests</h2>
+                    <div class="interests">
+                        <div class="box_icon">
+                            <ion-icon class="icon_interests" name="film-outline"></ion-icon> 
+                            <ion-icon class="icon_interests" name="airplane-outline"></ion-icon>
+                            <ion-icon class="icon_interests" name="paw-outline"></ion-icon>
+                            <ion-icon class="icon_interests" name="extension-puzzle-outline"></ion-icon>
+                        </div>
+                        <div class="button_download">
+                            <a href="assets/curriculo.pdf" download="cv_kimberllyatanazio.pdf" target="_blank">
+                                <button>Download CV</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <button>Download CV</button> 
-        <hr>
         </section>
+
+        <hr class="line">
         
         <section>
-            <h2>My Skills</h2>
-        <div>
-            <div class="circle"> 
-                <svg width="100" height="100"> 
-                <circle cx="50" cy="50" r="40" stroke="#34DBCB" stroke-width="10" fill="white" />
-                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#000">75%</text>
-                </svg>
-                <p>HTML</p>
+            <h2 class="subtitle" id="subtitle">My Skills</h2>
+
+        <div class="container_infos">   
+            <div class="left_column">
+                <h3>Technical Skills</h3>
+                <div class="technical_skills">
+                    <div class="skills"> 
+                        <span class="languages">HTML</span>
+                        <div class="rectangle" data-percent="40%">
+                            <div class="percent" id="html"></div>
+                        </div>
+                    </div>
+                    <div class="skills"> 
+                        <span class="languages">CSS</span>
+                        <div class="rectangle" data-percent="40%">
+                            <div class="percent" id="css"></div>
+                        </div>
+                    </div> 
+                    <div class="skills"> 
+                        <span class="languages">JavaScript</span>
+                        <div class="rectangle" data-percent="45%">
+                            <div class="percent" id="javascript"></div>
+                        </div>
+                    </div> 
+                    <div class="skills"> 
+                        <span class="languages">React</span>
+                        <div class="rectangle" data-percent="40%">
+                            <div class="percent" id="react"></div>
+                        </div>
+                    </div>  
+                    <div class="skills"> 
+                        <span class="languages">Mongo</span>
+                        <div class="rectangle" data-percent="20%">
+                            <div class="percent" id="mongo"></div>
+                        </div>
+                    </div> 
+                    <div class="skills"> 
+                        <span class="languages">NodeJS</span>
+                        <div class="rectangle" data-percent="20%">
+                            <div class="percent" id="nodejs"></div>
+                        </div>
+                    </div> 
+                    <div class="skills"> 
+                        <span class="languages">Git e GitHub</span>
+                        <div class="rectangle" data-percent="40%">
+                            <div class="percent" id="github"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="circle"> 
-                <svg width="100" height="100"> 
-                <circle cx="50" cy="50" r="40" stroke="#34DBCB" stroke-width="10" fill="white" />
-                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#000">75%</text>
-                </svg>
-                <p>CSS</p>
-            </div>  
-            <div class="circle"> 
-                <svg width="100" height="100"> 
-                <circle cx="50" cy="50" r="40" stroke="#34DBCB" stroke-width="10" fill="white" />
-                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#000">75%</text>
-                </svg>
-                <p>JavaScript</p>
-            </div>  
-            <div class="circle"> 
-                <svg width="100" height="100"> 
-                <circle cx="50" cy="50" r="40" stroke="#34DBCB" stroke-width="10" fill="white" />
-                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#000">75%</text>
-                </svg>
-                <p>React</p>
-            </div>  
-            <div class="circle"> 
-                <svg width="100" height="100"> 
-                <circle cx="50" cy="50" r="40" stroke="#34DBCB" stroke-width="10" fill="white" />
-                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#000">75%</text>
-                </svg>
-                <p>MongoDB</p>
-            </div>  
-            <div class="circle"> 
-                <svg width="100" height="100"> 
-                <circle cx="50" cy="50" r="40" stroke="#34DBCB" stroke-width="10" fill="white" />
-                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#000">75%</text>
-                </svg>
-                <p>NodeJS</p>
-            </div>  
-            <div class="circle"> 
-                <svg width="100" height="100"> 
-                <circle cx="50" cy="50" r="40" stroke="#34DBCB" stroke-width="10" fill="white" />
-                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="24" fill="#000">75%</text>
-                </svg>
-                <p>Git e GitHub</p>
-            </div>  
-        </div>
-        <div>
-            <h3>Soft Skills:</h3>
-            <div>
-                <span>Comunicação</span>
-                <span>Trabalho em equipe</span>
-                <span>Criatividade</span>
-                <span>Adaptabilidade</span>
-                <span>Resolução de problemas</span>
-                <span>Proatividade</span>
+            <div class="right_column">
+                <h3>Soft Skills</h3>
+                <div class="soft_skills">
+                    <ul class="list_skills">
+                    <li>Comunicação</li> <hr id="line_decoration">
+                    <li>Trabalho em equipe</li> <hr id="line_decoration">
+                    <li>Criatividade</li> <hr id="line_decoration">
+                    <li>Adaptabilidade</li> <hr id="line_decoration">
+                    <li>Resolução de problemas</li> <hr id="line_decoration">
+                    <li>Proatividade</li> 
+                    </ul>
+                </div>
             </div>
         </div>
-        <hr>
         </section>
 
+        <hr class="line">
+
         <section>
-            <h2>Experience & Education</h2>
-            <div class="experience-box">
-                <div>
-                    <img src="./assets/experience.png" alt="Icone de experiência profissional">
-                    <p class="periodo">2021 - 2023 </p>
-                    <p class="box-titulo">Analista de Marketing - Camino School</p>
-                    <p class="box-paragrafo">Expert em estratégias de CRM Marketing com RD Station, análise de dados e colaboração estratégica com agência.</p>
+            <h2 class="subtitle" id="subtitle">Experience & Education</h2>
+
+            <div class="container_infos">
+                <div class="left_column">
+                    <div class="experience_box">
+                        <div>
+                            <img src="./assets/experience.png" alt="Icone de experiência profissional">
+                        </div>  
+                        <div>
+                            <p class="periodo">2021 - 2023 </p>
+                            <p class="box-titulo">ANALISTA DE MARKETING - Camino School</p>
+                            <p class="box-paragrafo">Expert em estratégias de CRM Marketing com RD Station, análise de dados e colaboração estratégica com agência.</p>
+                        </div>
+                    </div>
+                    <div class="experience_box">
+                        <div>
+                            <img src="./assets/experience.png" alt="Icone de experiência profissional">
+                        </div>
+                        <div>
+                            <p class="periodo">2019 - 2021 </p>
+                            <p class="box-titulo">ASSISTENTE DE PROJETOS- AlkhemyLab</p>
+                            <p class="box-paragrafo">Coordenação de edição de vídeo, logística de projetos sociais e desenvolvimento de material online para participação remota.</p>
+                        </div>
+                    </div>
+                    <div class="experience_box">
+                        <div>
+                            <img src="./assets/experience.png" alt="Icone de experiência profissional">
+                        </div>
+                        <div>
+                            <p class="periodo">2017 - 2017 </p>
+                            <p class="box-titulo">ASSISTENTE SOCIAL MEDIA - QGBrain</p>
+                            <p class="box-paragrafo">Gerenciamento de redes sociais, incluindo publicação, monitoramento de engajamento e resposta a consultas de clientes.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="./assets/experience.png" alt="Icone de experiência profissional">
-                    <p class="periodo">2019 - 2021 </p>
-                    <p class="box-titulo">Assistente de projetos - AlkhemyLab</p>
-                    <p class="box-paragrafo">Coordenação de edição de vídeo, logística de projetos sociais e desenvolvimento de material online para participação remota.</p>
+                
+                <div class="right_column">
+                    <div class="education_box">
+                        <div>
+                            <img src="./assets/education.png" alt="Icone de formação acadêmica">
+                        </div>
+                        <div>
+                            <p class="periodo">2024</p>
+                            <p class="box-titulo">WEB DEVELOPER - Bytes4Future</p>
+                            <p class="box-paragrafo">Bootcamp voltado para o desenvolvimento de competências de Junior FullStack Developer.</p>
+                        </div>
+                    </div>
+                    <div class="education_box">
+                        <div>
+                            <img src="./assets/education.png" alt="Icone de formação acadêmica">
+                        </div>
+                        <div>
+                            <p class="periodo">2020 - 2023</p>
+                            <p class="box-titulo">CINEMA - UniMAX</p>
+                            <p class="box-paragrafo">Imersão prática e teórica, abordando roteiro, direção, produção e edição.</p>
+                        </div>
+                    </div>
+                    <div class="education_box">
+                        <div>
+                            <img src="./assets/education.png" alt="Icone de formação acadêmica">
+                        </div>
+                        <div>
+                            <p class="periodo">2017 - 2018</p>
+                            <p class="box-titulo">AUDIOVISUAL - FAPCOM</p>
+                            <p class="box-paragrafo">Desenvolvi habilidades em produção audiovisual, storytelling e estratégias de comunicação.</p>
+                        </div>
+                    </div>           
                 </div>
-                <div>
-                    <img src="./assets/experience.png" alt="Icone de experiência profissional">
-                    <p class="periodo">2017 - 2017 </p>
-                    <p class="box-titulo">Assistente Social Media - QGBrain</p>
-                    <p class="box-paragrafo">Gerenciamento de redes sociais, incluindo publicação, monitoramento de engajamento e resposta a consultas de clientes.</p>
-                </div>
-            </div>
-            
-            <div class="education-box">
-                <div>
-                    <img src="./assets/education.png" alt="Icone de formação acadêmica">
-                    <p class="periodo">2024</p>
-                    <p class="box-titulo">WEB DEVELOPER - Bytes4Future</p>
-                    <p class="box-paragrafo">Bootcamp voltado para o desenvolvimento de competências de Junior FullStack Developer.</p>
-                </div>
-                <div>
-                    <img src="./assets/education.png" alt="Icone de formação acadêmica">
-                    <p class="periodo">2020 - 2023</p>
-                    <p class="box-titulo">CINEMA - UniMAX</p>
-                    <p class="box-paragrafo">Imersão prática e teórica, abordando roteiro, direção, produção e edição.</p>
-                </div>
-                <div>
-                    <img src="./assets/education.png" alt="Icone de formação acadêmica">
-                    <p class="periodo">2017 - 2018</p>
-                    <p class="box-titulo">AUDIOVISUAL - FAPCOM</p>
-                    <p class="box-paragrafo">Desenvolvi habilidades em produção audiovisual, storytelling e estratégias de comunicação.</p>
-                </div>           
             </div>
         </section>
     </main> 
